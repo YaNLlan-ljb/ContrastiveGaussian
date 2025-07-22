@@ -91,7 +91,7 @@ azimuth: in (-180, 180), from +z to +x is (0, 90)
 
 ## Acknowledgement
 
-This work is built on many amazing research works and open-source projects, thanks a lot to all the authors for sharing!
+This work is built on numerous impressive research works and open-source projects. We sincere thanks to the authors for sharing their code.
 
 - [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) and [diff-gaussian-rasterization](https://github.com/graphdeco-inria/diff-gaussian-rasterization)
 - [threestudio](https://github.com/threestudio-project/threestudio)
