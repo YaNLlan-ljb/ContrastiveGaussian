@@ -61,7 +61,7 @@ python stage1.py --config configs/image.yaml input=data/name_rgba.png save_path=
 python stage1.py --config configs/image.yaml input=data/name_rgba.png save_path=name elevation=-30
 
 ### training mesh stage
-# auto load coarse_mesh and refine 50 iters (~1min), export fine_mesh to logs
+# auto load coarse_mesh and refine 50 iters, export fine_mesh to logs
 python stage2.py --config configs/image.yaml input=data/name_rgba.png save_path=name
 
 # gui mode
