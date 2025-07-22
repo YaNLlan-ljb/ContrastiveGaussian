@@ -49,26 +49,26 @@ python process.py data
 
 ### stage 1 training
 # train 500 iters and export ckpt & coarse_mesh to logs 
-python main.py --config configs/image.yaml input=data/name_rgba.png save_path=name
+python stage1.py --config configs/image.yaml input=data/name_rgba.png save_path=name
 
 # export glb instead of obj
-python main.py --config configs/image.yaml input=data/name_rgba.png save_path=name mesh_format=glb
+python stage1.py --config configs/image.yaml input=data/name_rgba.png save_path=name mesh_format=glb
 
 # gui mode 
-python main.py --config configs/image.yaml input=data/name_rgba.png save_path=name gui=True
+python stage1.py --config configs/image.yaml input=data/name_rgba.png save_path=name gui=True
 
 # use an estimated elevation angle if image is not front-view (e.g., common looking-down image can use -30)
-python main.py --config configs/image.yaml input=data/name_rgba.png save_path=name elevation=-30
+python stage1.py --config configs/image.yaml input=data/name_rgba.png save_path=name elevation=-30
 
 ### training mesh stage
 # auto load coarse_mesh and refine 50 iters (~1min), export fine_mesh to logs
-python main2.py --config configs/image.yaml input=data/name_rgba.png save_path=name
+python stage2.py --config configs/image.yaml input=data/name_rgba.png save_path=name
 
 # gui mode
-python main2.py --config configs/image.yaml input=data/name_rgba.png save_path=name gui=True
+python stage2.py --config configs/image.yaml input=data/name_rgba.png save_path=name gui=True
 
 # export glb instead of obj
-python main2.py --config configs/image.yaml input=data/name_rgba.png save_path=name mesh_format=glb
+python stage2.py --config configs/image.yaml input=data/name_rgba.png save_path=name mesh_format=glb
 ```
 
 ## Tips
