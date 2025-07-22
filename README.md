@@ -9,8 +9,8 @@ Our work is accepted by IEEE International Conference on Multimedia & Expo 2025 
 ## Install
 
 ```bash
-conda create -n contrastivedream python=3.8
-conda activate contrastivedream
+conda create -n contrastivegaussian python=3.8
+conda activate contrastivegaussian
 
 # a modified gaussian splatting (+ depth, alpha rendering)
 git clone --recursive https://github.com/ashawkey/diff-gaussian-rasterization
