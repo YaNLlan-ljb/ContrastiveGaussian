@@ -19,6 +19,8 @@ pip install ./diff-gaussian-rasterization
 # Real-ESRGAN
 # Please follow the instruction of the Real-ESRGAN's repository to implement the Real-ESRGAN
 git clone https://github.com/xinntao/Real-ESRGAN.git
+# And move super_resolution.py file to the Real-ESRGAN folder
+mv super_resolution.py ./Real_ESRGAN/
 
 # simple-knn
 pip install ./simple-knn
